@@ -19,6 +19,7 @@ namespace JediMindTricks
             };
 
             characters.Remove("Luke");
+            characters.Add("Anakin", 1);
             foreach (var items in characters)
             {
                 Console.WriteLine(items);
