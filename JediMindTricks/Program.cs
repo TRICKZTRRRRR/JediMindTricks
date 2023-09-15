@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,19 @@ namespace JediMindTricks
     {
         static void Main(string[] args)
         {
+            Dictionary<string, int> characters = new Dictionary<string, int>() 
+            { 
+                { "Luke", 1 }, 
+                { "Han", 2 }, 
+                { "Chewbacca", 3 } 
+            };
+
+            characters.Remove("Han");
+            foreach (var items in characters)
+            {
+                Console.WriteLine(items);
+            }
+            Console.ReadLine();
         }
     }
 }
