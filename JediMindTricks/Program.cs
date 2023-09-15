@@ -18,7 +18,7 @@ namespace JediMindTricks
                 { "Chewbacca", 3 } 
             };
 
-            characters.Remove("Han");
+            characters.Remove("Luke");
             foreach (var items in characters)
             {
                 Console.WriteLine(items);
